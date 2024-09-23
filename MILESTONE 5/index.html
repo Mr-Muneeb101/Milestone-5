@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic + Editable + shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="head center">
+        <h3>Dynamic + Editable + shareable Resume Builder</h3>
+        <span class="head-mini-text"> by Muneeb Ahmed</span>
+    </div>
+    <button id="edit-me">Edit Me Again</button>
+    <form action="" id="resume-builder" class="my-form">
+        <fieldset>
+            <legend>Persnol Information</legend>
+            <br>
+            <label for="Username">User name:</label>
+            <input id="Username" type="text" required><br>
+            <label for="User-Profile-pic">Profile Picture:</label>
+            <input id="User-Profile-pic" type="file" accept="image/*" name="ProfileImage" /><br>
+            <label for="name">Name:</label>
+            <input id="name" type="text" required><br>
+            <label for="Feild">Feild:</label>
+            <input id="Feild" type="text" required><br>
+            <label for="web">web:</label>
+            <input id="web" type="text" required><br>
+            <label for="Email">Email:</label>
+            <input id="Email" type="email" required><br>
+            <label for="Adress">Adress:</label>
+            <input id="Adress" type="text" required><br>
+            <label for="PhoneNumber">Phone Number:</label>
+            <input id="PhoneNumber" type="number" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Degree">Degree:</label>
+            <input id="Degree" type="text" required><br>
+            <label for="Institution">Institution:</label>
+            <input id="Institution" type="text" required><br>
+            <label for="Year">Year:</label>
+            <input id="Year" type="number" required><br>
+            <label for="Degree-2"> 2nd Degree:</label>
+            <input id="Degree-2" type="text" required><br>
+            <label for="Institution-2">Institution:</label>
+            <input id="Institution-2" type="text" required><br>
+            <label for="Year-2">Year:</label>
+            <input id="Year-2" type="number" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skill-1">Skill-1:</label>
+            <input id="skill-1" type="text"><br>
+            <label for="skill-2">skill-2:</label>
+            <input id="skill-2" type="text"><br>
+            <label for="skill-3">Skill-3:</label>
+            <input id="skill-3" type="text"><br>
+            <label for="skill-4">Skill-4:</label>
+            <input id="skill-4" type="text"><br>
+            <label for="skill-5">Skill-5:</label>
+            <input id="skill-5" type="text"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Language</legend>
+            <label for="language-1">Language-1:</label>
+            <input id="language-1" type="text"><br>
+            <label for="language-2">Language-2:</label>
+            <input id="language-2" type="text">
+        </fieldset>
+        <fieldset>
+            <legend>About Me:</legend>
+            <label for="about-area">Your Intro:</label>
+            <textarea name="About-info" id="about-area"></textarea>
+        </fieldset>
+        <fieldset class="text-center">
+            <legend>Experience:</legend>
+            <label for="experience-area">Your Experience:</label>
+            <textarea name="Experience-info" id="experience-area"></textarea><br>
+            <span class="text-center">"You can give any link of your portfolio if you have"</span> <br>
+            <label for="portfolio-link-1">Portfolio link 1</label>
+            <input type="text" id="portfolio-link-1"><br>
+            <label for="portfolio-link-2">Portfolio link 2</label>
+            <input type="text" id="portfolio-link-2"><br>
+        </fieldset>
+        <fieldset>
+            <Legend>Hobbies</Legend>
+            <label for="hobby-1">Hobby-1:</label>
+            <input id="hobby-1" type="text"><br>
+            <label for="hobby-2">Hobby-2:</label>
+            <input id="hobby-2" type="text"><br>
+            <label for="hobby-3">Hobby-3:</label>
+            <input id="hobby-3" type="text"><br>
+            <label for="hobby-4">Hobby-4:</label>
+            <input id="hobby-4" type="text"><br>
+            <label for="hobby-5">Hobby-5:</label>
+            <input id="hobby-5" type="text"><br>
+        </fieldset>
+
+        <button type="submit" id="submit-button"> Generate Resume</button>
+    </form>
+
+
+    <div id="genereted-resume" contenteditable="true">
+
+    </div>
+
+
+    <div class="center" id="shareable-Link-Container">
+        <h4>Here is Your Unique URl link</h4>
+        <a href="#" id="shareable-link" target="_blank"> </a>
+        <div class="save-as-pdf">
+            <button id="save-as-Pdf-button"> Save as PDF</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
